@@ -1,0 +1,97 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Steam bbcode",
+	"patterns": [
+			{ "include": "#bold" },
+			{ "include": "#italic" },
+			{ "include": "#underline" },
+			{ "include": "#header1" },
+			{ "include": "#header2" },
+			{ "include": "#header3" },
+			{ "include": "#code" },
+			{ "include": "#quote" },
+			{ "include": "#list" },
+			{ "include": "#listItem" },
+			{ "include": "#url" },
+			{ "include": "#img" }
+		
+	],
+	"repository": {
+		"bold": {
+			"begin": "\\[b\\]",
+			"end": "\\[/b\\]",
+			"contentName": "bbcode.bold"
+		},
+
+		"italic": {
+			"begin": "\\[i\\]",
+			"end": "\\[/i\\]",
+			"contentName": "markup.italic"
+		},
+
+		"underline": {
+			"begin": "\\[u\\]",
+			"end": "\\[/u\\]",
+			"contentName": "markup.underline"
+		},
+
+		"header1": {
+			"begin": "\\[h1\\]",
+			"end": "\\[/h1\\]",
+			"contentName": "bbcode.heading.1",
+			"patterns": [
+				{
+					"include": "#bold"
+				}
+			]
+		},
+
+		"header2": {
+			"begin": "\\[h2\\]",
+			"end": "\\[/h2\\]",
+			"contentName": "bbcode.heading.2"
+		},
+
+		"header3": {
+			"begin": "\\[h3\\]",
+			"end": "\\[/h3\\]",
+			"contentName": "bbcode.heading.3"
+		},
+
+		"code": {
+			"begin": "\\[code\\]",
+			"end": "\\[/code\\]",
+			"contentName": "markup.raw.block"
+		},
+
+		"quote": {
+			"begin": "\\[quote\\]",
+			"end": "\\[/quote\\]",
+			"contentName": "markup.quote"
+		},
+
+		"list": {
+			"begin": "\\[list\\]",
+			"end": "\\[/list\\]",
+			"contentName": "markup.list"
+		},
+
+		"listItem": {
+			"match": "\\[\\*\\]",
+			"name": "markup.list.item"
+		},
+
+		"url": {
+			"begin": "\\[url(=[^\\]]+)?\\]",
+			"end": "\\[/url\\]",
+			"contentName": "markup.underline.link"
+		},
+
+		"img": {
+			"begin": "\\[img\\]",
+			"end": "\\[/img\\]",
+			"contentName": "markup.image"
+		}
+	},
+	"scopeName": "source.bbcodeSteam"
+}

@@ -1,0 +1,69 @@
+{
+    "comments": {
+        // symbol used for single line comment. Remove this entry if your language does not support line comments
+        "lineComment": "//",
+        // symbols used for start and end a block comment. Remove this entry if your language does not support block comments
+        "blockComment": [ "/*", "*/" ]
+    },
+    // symbols used as brackets
+    "brackets": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"]
+    ],
+    // symbols that are auto closed when typing
+    // "autoClosingPairs": [
+    //     ["{", "}"],
+    //     ["[", "]"],
+    //     ["(", ")"],
+    //     ["\"", "\""],
+    //     ["'", "'"]
+    // ],
+    // // symbols that can be used to surround a selection
+    // "surroundingPairs": [
+    //     ["{", "}"],
+    //     ["[", "]"],
+    //     ["(", ")"],
+    //     ["\"", "\""],
+    //     ["'", "'"]
+    // ]
+    "autoClosingPairs": [
+        { "open": "[b]", "close": "[/b]" },
+        { "open": "[i]", "close": "[/i]" },
+        { "open": "[u]", "close": "[/u]" },
+
+        { "open": "[h1]", "close": "[/h1]" },
+        { "open": "[h2]", "close": "[/h2]" },
+        { "open": "[h3]", "close": "[/h3]" },
+
+        { "open": "[code]", "close": "[/code]" },
+        { "open": "[quote]", "close": "[/quote]" },
+
+        { "open": "[list]", "close": "[*][/list]" },
+
+        { "open": "[url]", "close": "[/url]" },
+        { "open": "[url=]", "close": "[/url]" },
+
+        { "open": "[img]", "close": "[/img]" }
+    ],
+    "surroundingPairs": [
+        { "open": "[b]", "close": "[/b]" },
+        { "open": "[i]", "close": "[/i]" },
+        { "open": "[u]", "close": "[/u]" },
+
+        { "open": "[h1]", "close": "[/h1]" },
+        { "open": "[h2]", "close": "[/h2]" },
+        { "open": "[h3]", "close": "[/h3]" },
+
+        { "open": "[code]", "close": "[/code]" },
+        { "open": "[quote]", "close": "[/quote]" },
+
+        { "open": "[list]", "close": "[/list]" },
+
+        { "open": "[url]", "close": "[/url]" },
+        { "open": "[url=]", "close": "[/url]" },
+
+        { "open": "[img]", "close": "[/img]" }
+    ]
+
+}

@@ -1,0 +1,77 @@
+{
+  "name": "steam-bbcode",
+  "displayName": "Steam bbcode",
+  "description": "Help write Adds syntax highlighting for Steam’s BBCode tags such as [b], [i], [u], [h1], [code], and more. Ideal for creating Steam guides, mod descriptions, and workshop content with clean, readable formatting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "bbcodeSteam",
+        "aliases": [
+          "Steam bbcode",
+          "bbcodeSteam"
+        ],
+        "extensions": [
+          ".bbcode",
+          ".steam"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "bbcodeSteam",
+        "scopeName": "source.bbcodeSteam",
+        "path": "./syntaxes/bbcodeSteam.tmLanguage.json"
+      }
+    ],
+     "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+          "textMateRules": [
+          {
+            "scope": "bbcode.bold",
+            "settings": {
+              "foreground": "#99A1A8",
+              "fontStyle": "bold"
+            }
+            
+           
+              
+              
+          },
+          {
+            "scope": "bbcode.heading.3",
+              "settings": {
+                "foreground": "#5AA9D6",
+                "fontSize": 1.25,
+                "lineHeight": 3
+              }
+            },
+            {
+              "scope": "bbcode.heading.2",
+              "settings": {
+              "foreground": "#5AA9D8",
+              "fontSize": 1.56,
+              "lineHeight": 3
+            }
+            },
+            {
+              "scope": "bbcode.heading.1",
+              "settings": {
+                "foreground": "#5AA9D7",
+                "fontSize": 1.95,
+                "lineHeight": 3
+              }
+            }
+          
+        ]
+      }
+    }
+  }
+}
