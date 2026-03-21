@@ -3,6 +3,7 @@
   "displayName": "Steam bbcode highlighting and autocompile",
   "description": "Help write Adds syntax highlighting for Steam’s BBCode tags such as [b], [i], [u], [h1], [code], and more. Ideal for creating Steam guides, mod descriptions, and workshop content with clean, readable formatting and resize up h1,h2,h3",
   "publisher": "gobbibomb",
+  "icon": "images/thumbnail.jpg",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.109.0"
