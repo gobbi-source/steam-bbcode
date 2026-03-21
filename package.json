@@ -1,14 +1,19 @@
 {
   "name": "steam-bbcode",
-  "displayName": "Steam bbcode",
+  "displayName": "Steam bbcode highlighting and autocompile",
   "description": "Help write Adds syntax highlighting for Steam’s BBCode tags such as [b], [i], [u], [h1], [code], and more. Ideal for creating Steam guides, mod descriptions, and workshop content with clean, readable formatting",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.109.0"
   },
   "categories": [
     "Programming Languages"
   ],
+  "keywords": [
+		"steam",
+		"bbcode",
+		"workshop"
+	],
   "contributes": {
     "languages": [
       {
@@ -73,5 +78,9 @@
         ]
       }
     }
-  }
+  },
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/gobbi-source/steam-bbcode"
+	}
 }
